@@ -590,18 +590,15 @@
 }
 @media (max-width: 992px) {
     .content  {
-        max-width: auto;
+       
     }
 }
 @media (max-width: 768px) {
     .content {
-        max-width: auto;
-        padding: 0;
-        margin: 0;
+
     }
     .header {
         font-size: 12px;
-        
     }
     .call {
         font-size: 10px;
@@ -632,8 +629,8 @@
     }
     .choice {
         position: absolute;
-        right: 80px;
-        top: 1210px;
+        right: 90px;
+        top: 1298px;
         padding: 10px;
         margin: 0px;
         flex-direction: column;
@@ -642,7 +639,7 @@
         border-radius: 10px;
         opacity: 0;
         visibility: hidden;
-        transform: translateX(+80%);
+        transform: translatey(-80%);
         transition: opacity 0.5s, transform 0.5s;
     }
     .link {
@@ -765,9 +762,6 @@
         justify-content: center;
         margin: 7px 0 0;
     }
-    .hoverboard {
-
-    }
     .consultants > div {
         padding-bottom: 10px;
     }
@@ -814,9 +808,6 @@
         line-height: 20px;
         padding-top: 20px;
     }
-    .Catalog {
-
-    }
     .Catalog > div > table {
         width: auto;
     }
@@ -844,9 +835,6 @@
     .td2 > img {
         width: 100px;
         height: 100px;
-    }
-    .td3 {
-
     }
     .model {
         font-size: 12px;
