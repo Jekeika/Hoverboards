@@ -14,16 +14,21 @@
     justify-content: space-between;
     align-items: center;
 }
-.call {
+.call,.call:link {
     background-color: #FFA019;
     color: #ffffff;
-    top: 12px;
     width: 181px;
     height: 40px;
     border: 0px;
     border-radius: 10px;
-    font-family: 'Segoe UI';
     font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.call:hover {
+    background-color: #ffb650;
 }
 .menu {
     justify-content: space-between;
@@ -80,7 +85,7 @@
     letter-spacing: 0.6px;
     padding-bottom: 25px;
 }
-.button {
+.button,.button:link {
     width: 119px;
     height: 33px;
     left: 0px;
@@ -89,10 +94,14 @@
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
-    /* identical to box height, or 250% */
     letter-spacing: 0.36px;
     border-radius: 10px;
     border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: rgb(190, 190, 190);
 }
 .we {
     padding-left: 10%;
@@ -113,6 +122,7 @@
 .Benefits > div > button {
     border: none;
     background:none;
+    cursor: pointer;
 }
 .Class {
     padding-top: 96px;
@@ -132,7 +142,7 @@
     padding-bottom: 83px;
 }
 .about_us > h1 {
-    padding-top: 175px;
+    padding-top: 137px;
     font-style: normal;
     font-weight: 300;
     font-size: 30px;
@@ -204,7 +214,7 @@
     background: #FFA019;
     color: #FFFFFF;
 }
-.input > button {
+.input > button,.input > button:link {
     background: #ffffff;
     width: 194px;
     height: 39px;
@@ -217,6 +227,10 @@
     text-align: center;
     border: 0;
     margin-left: 19px;
+    cursor: pointer;
+}
+.input > button:hover {
+    background-color: #ececec;
 }
 .hoverboard {
     padding-left: 10%;
@@ -410,9 +424,7 @@
     font-weight: 300;
     font-size: 16.0996px;
     line-height: 19px;
-
     color: #555555;
-
     padding-left: 22px;
 }
 .price {
@@ -465,9 +477,9 @@
     padding-top: 7px;
     padding-left: 30px;
 }
-.write {
-    width: 97px;
-    height: 38px;
+.write,.write:link {
+    width: 90px;
+    height: 34px;
     left: 193px;
     top: 95px;
     border-radius: 10px;
@@ -482,6 +494,13 @@
     font-size: 13.5396px;
     line-height: 35px;
     color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.write:hover {
+    background-color: #ffb650;
 }
 .brands {
     padding: 0 2%;
@@ -524,22 +543,22 @@
 .question1 {
     color: #FFFFFF;
     position: absolute;
-    transform: translate(+10%, -340%);
+    transform: translate(+10%, -390%);
 }
 .question2 {
     color: #FFFFFF;
     position: absolute;
-    transform: translate(+2%, -340%);
+    transform: translate(+2%, -390%);
 }
 .question3 {
     color: #FFFFFF;
     position: absolute;
-    transform: translate(+5%, -340%);
+    transform: translate(+5%, -390%);
 }
 .question4 {
     color: #FFFFFF;
     position: absolute;
-    transform: translate(+10%, -340%);
+    transform: translate(+10%, -390%);
 }
 .picture_with {
     filter: brightness(40%);
@@ -587,20 +606,317 @@
         max-width: auto;
         padding: 0;
     }
+    .call,.call:link {
+        display: flex;
+        font-size: 14px;
+        width: 150px;
+        height: 38px;
+    }
+    .menu {
+        font-size: 14px;
+    }
+    .subscription > div {
+        font-size: 14px;
+    }
+    .kotolog {
+        flex-wrap: wrap;
+    }
+    .kotolog > div {
+        padding-bottom: 20px;
+    }
+    .consultants {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .brands {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .information > div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer {
+        padding-top: 40px;
+        flex-direction: column-reverse;
+    }
+    .different {
+        flex-wrap: wrap;
+    }
+    .MYGIRO {
+        padding-top: 10px;
+    }
+    .online_store {
+        padding-top: 40px;
+    }
+
 }
 @media (max-width: 992px) {
-    .content  {
-       
-    }
-}
-@media (max-width: 768px) {
     .content {
+        max-width: auto;
+        padding: 0;
+    }
+    .call,.call:link {
+        display: flex;
+        font-size: 14px;
+        width: 150px;
+        height: 38px;
+    }
+    .menu {
+        font-size: 16px;
+    }
+    .SPAN {
+        position: absolute;
+        right: 50px;
+        top: 0px;
+        padding: 20px;
+        margin: 0px;
+        flex-direction: column;
+        background-color: #FFA019;
+        z-index: 9;
+        border-radius: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-80%);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+    .SPAN-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .link {
+        color: #FFFFFF;   
+    }
+    .m-menu {
+        display: block;
+        background-color: transparent;
+        border: none;
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        cursor: pointer;
+        background: #FFA019;
+        border-radius: 10px;
+    }
+    .is-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    .Benefits {
+        padding-top: 40px;
+    }
+    .Benefits > div > h1 {
+        font-size: 28px;
+    }
+    .subscription > div {
+        font-size: 14px;
+    }
+    .Class {
+        padding-top: 40px;
+    }
+    .dep {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 15px;
+    }
+    .about_us {
+        padding-bottom: 40px;
+    }
+    .about_us > h1{
+        padding-top: 40px;
+        font-size: 28px;
+    }
+    .about_us > p {
+        padding-top: 15px;
+        font-size: 16px;
+    }
+    .subscription {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .input {
+        padding-top: 28px;
+    }
+    .name,.Email {
+        width: 140px;
+        height: 28px;
+        font-size: 10px;
+        padding-left: 5px;
+    }
+    .input > button {
+        width: 140px;
+        height: 28px;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
     }
+    .hoverboard > h1 {
+        padding-top: 40px;
+        font-size: 28px;
+    }
+    .peculi {
+        font-size: 18px;
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .peculi > div > li {
+        font-size: 18px;
+    }
+    .hoverboard > p {
+        font-size: 18px;
+        line-height: 30px;
+        padding-top: 40px;
+    }
+    .Catalog > div > table {
+        width: auto;
+    }
+    .td1 {
+        height: auto;
+    }
+    .title1,.title2,.title3,.title4 {
+        line-height: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+    .title1,.title4 {
+        width: 60px;
+    }
+    .title2 {
+        width: 85px;
+    }
+    .title3 {
+        width: 105px;
+    }
+    .td2 {
+        width: auto;
+        height: 200px;
+    }
+    .td2 > img {
+        width: 150px;
+        height: 150px;
+    }
+    .model {
+        font-size: 14px;
+        padding-left: 10px ;
+        width: 200px;
+        height: 38px;
+    }
+    .price {
+        font-size: 16px;
+        padding: 15px 10px 10px;
+        height: auto;
+    }
+    .CAT {
+        padding: 20PX 0;
+    }
+    .Catalog > .CAT > div > h1 {
+        font-size: 28px;
+    }
+    .kotolog {
+        flex-wrap: wrap;
+    }
+    .kotolog > div {
+        padding-bottom: 20px;
+    }
+    .kotolog > div > table {
+        width: 100px;
+        height: 250px;
+    }
+    .our_consultants {
+        padding: 20px 10%;
+    }
+    .our_consultants > h1 {
+        font-size: 28px;
+    }
+    .consultants {
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .consultants > div {
+        padding-bottom: 20px;
+    }
+    .img {
+        width: 125px;
+        height: 125px;
+    }
+    .workers_name {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .speciality {
+        font-size: 12px;
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+    .write,.write:link {
+        height: 30px;
+        width: 68px;
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 10px;
+        text-align: center;
+        line-height: normal;
+    }
+    .brands {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .brand_name {
+        font-size: 28px;
+    }
+    .information {
+        padding-top: 60px;
+    }
+    .information > h1 {
+        font-size: 28px;
+    }
+    .hell {
+        padding-top: 40px;
+    }
+    .information > div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .picture_with {
+        width: 210px;
+        height: 210px;
+    }
+    .question1,.question2,.question3,.question4 {
+        font-size: 14px;
+    }
+    .footer {
+        padding-top: 40px;
+        flex-direction: column-reverse;
+    }
+    .different {
+        flex-wrap: wrap;
+    }
+    .MYGIRO {
+        padding-top: 10px;
+    }
+    .online_store {
+        padding-top: 40px;
+    }
+    .MYGIRO > p {
+        padding-top: 10px;
+    }
+
+}
+@media (max-width: 768px) {
     .header {
         font-size: 12px;
     }
-    .call {
+    .call,.call:link {
         font-size: 10px;
         height: 30px;
     }
@@ -614,8 +930,8 @@
     }
     .SPAN {
         position: absolute;
-        right: 40px;
-        top: 50px;
+        right: 50px;
+        top: 0px;
         padding: 10px;
         margin: 0px;
         flex-direction: column;
@@ -644,8 +960,7 @@
     }
     .link {
         color: #FFFFFF;
-        font-size: 11px;
-        
+        font-size: 11px;   
     }
     .SPAN-item:not(:last-child) {
         margin-bottom: 10px;
@@ -780,7 +1095,7 @@
         padding-left: 10px;
         padding-top: 5px;
     }
-    .write {
+    .write,.write:link {
         height: 28px;
         width: 65px;
         margin-left: 10px;
@@ -908,6 +1223,10 @@
         width: 140px;
         height: 140px;
     }
+    .question1,.question2,.question3,.question4 {
+        font-size: 10px;
+        font-weight: normal;
+    }
     .footer {
         padding: 20px 10%;
         flex-direction: column-reverse;
@@ -934,7 +1253,7 @@
     }
     .MYGIRO > p {
         font-size: 10px;
-        padding-top: 10px;
+        padding-top: 5px;
         line-height: 15px;
     }
 }
