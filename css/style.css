@@ -5,6 +5,7 @@
 .content {
     font-family: 'Segoe UI';
 }
+/*Шапка сайта*/
 .header {
     height: 65px;
     display: flex;
@@ -30,6 +31,7 @@
 .call:hover {
     background-color: #ffb650;
 }
+/*Меню*/
 .menu {
     justify-content: space-between;
     display: flex;
@@ -54,6 +56,7 @@
     text-decoration: none;
     margin-left: 20px;
 }
+/*Главное окно*/
 .win {
     position: relative;
     text-align: center;
@@ -103,6 +106,7 @@
 .button:hover {
     background-color: rgb(190, 190, 190);
 }
+/*Наши преимущества*/
 .we {
     padding-left: 10%;
     padding-right: 10%;
@@ -136,6 +140,7 @@
     font-size: 19.9969px;
     line-height: 30px;
 }
+/*О нас*/
 .about_us {
     padding-left: 10%;
     padding-right: 10%;
@@ -155,6 +160,7 @@
     font-size: 20px;
     line-height: 30px;
 }
+/*Жёлтый блок с подпиской*/
 .blok {
     background-color: #FFA019;
     color: #FFFFFF;
@@ -232,6 +238,7 @@
 .input > button:hover {
     background-color: #ececec;
 }
+/*Особенности гироскуторов*/
 .hoverboard {
     padding-left: 10%;
     padding-right: 10%;
@@ -265,6 +272,7 @@
     line-height: 24px;
     padding-top: 47px;
 }
+/*Каталог*/
 .Catalog {
     padding-left: 10%;
     padding-right: 10%;
@@ -439,6 +447,7 @@
     font-size: 20.0432px;
     line-height: 24px;
 }
+/*Наши консультанты*/
 .our_consultants {
     padding: 85px 10% 128px;
 }
@@ -502,6 +511,7 @@
 .write:hover {
     background-color: #ffb650;
 }
+/*Бренды*/
 .brands {
     padding: 0 2%;
     height: 93px;
@@ -518,6 +528,7 @@
     line-height: 60px;
     color: #9B9B9B;
 }
+/*Полезная информация*/
 .information {
     padding: 128px 10% 0px;
 }
@@ -563,6 +574,7 @@
 .picture_with {
     filter: brightness(40%);
 }
+/*Подвал сайта*/
 .footer {
     padding: 177px 10% 111px;
     display: flex;
@@ -1051,16 +1063,26 @@
         line-height: 20px;
     }
     .blok {
-        height: 60px;
+        margin: auto;
+        height: auto;
+        align-items: center;
+    }
+    .subscription {
+        display: flex;
+        align-items: center;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
     }
     .subscription > div {
         font-size: 9px;
         line-height: 15px; 
+        justify-content: center;
+        align-items: center;
     }
     .input {
         display: block;
         padding: 0;
-        justify-content: space-between;
+        
     }
     .name,.Email {
         width: 80px;
