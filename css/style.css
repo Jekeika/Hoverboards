@@ -602,12 +602,19 @@
     align-items: center;
 }
 .MYGIRO > P {
-    padding-top: 33px;
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     display: flex;
     align-items: center;
+    color: #8191A6;
+}
+.line {
+    text-decoration: none;
+}
+.line > a {
+    text-decoration: none;
     color: #8191A6;
 }
 .Copyright {
@@ -958,7 +965,7 @@
     .choice {
         position: absolute;
         right: 90px;
-        top: 1298px;
+        top: 1309px;
         padding: 10px;
         margin: 0px;
         flex-direction: column;
